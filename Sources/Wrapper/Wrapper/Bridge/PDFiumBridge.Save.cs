@@ -9,12 +9,12 @@
     /// <summary>
     /// The class contains all pdfium methods currently supported in this project.
     /// </summary>
-    internal sealed partial class PDFiumBridge
+    public sealed partial class PDFiumBridge
     {
         /// <summary>
         /// Structure for custom file write.
         /// </summary>
-        internal struct FPDF_FILEWRITE
+        public struct FPDF_FILEWRITE
         {
             /// <summary>
             /// Version number of the interface. Currently must be 1.
@@ -56,7 +56,7 @@
         /// <summary>
         /// Enumeration for save functions.
         /// </summary>
-        internal enum FPDF_SAVEFLAGS : int
+        public enum FPDF_SAVEFLAGS : int
         {
             /// <summary>
             /// Incremental flag.

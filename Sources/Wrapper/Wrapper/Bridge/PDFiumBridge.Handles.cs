@@ -5,12 +5,12 @@
     /// <summary>
     /// The class contains all delegates of methods in pdfium dll.
     /// </summary>
-    internal partial class PDFiumBridge
+    public sealed partial class PDFiumBridge
     {
         /// <summary>
         /// Document handle struct.
         /// </summary>
-        internal struct FPDF_DOCUMENT
+        public struct FPDF_DOCUMENT
         {
             /// <summary>
             /// Gets invalid handle.
@@ -40,7 +40,7 @@
         /// <summary>
         /// Page handle struct.
         /// </summary>
-        internal struct FPDF_PAGE
+        public struct FPDF_PAGE
         {
             /// <summary>
             /// Gets invalid handle.
@@ -70,7 +70,7 @@
         /// <summary>
         /// Bitmap handle struct.
         /// </summary>
-        internal struct FPDF_BITMAP
+        public struct FPDF_BITMAP
         {
             /// <summary>
             /// Gets invalid handle.
@@ -100,7 +100,7 @@
         /// <summary>
         /// Page range handle struct.
         /// </summary>
-        internal struct FPDF_PAGERANGE
+        public struct FPDF_PAGERANGE
         {
             /// <summary>
             /// Gets invalid handle.
@@ -130,7 +130,7 @@
         /// <summary>
         /// Destination handle struct.
         /// </summary>
-        internal struct FPDF_DEST
+        public struct FPDF_DEST
         {
             /// <summary>
             /// Gets invalid handle.
@@ -160,7 +160,7 @@
         /// <summary>
         /// Bookmark handle struct.
         /// </summary>
-        internal struct FPDF_BOOKMARK
+        public struct FPDF_BOOKMARK
         {
             /// <summary>
             /// Gets invalid handle.
@@ -190,7 +190,7 @@
         /// <summary>
         /// Action handle struct.
         /// </summary>
-        internal struct FPDF_ACTION
+        public struct FPDF_ACTION
         {
             /// <summary>
             /// Gets invalid handle.
@@ -220,7 +220,7 @@
         /// <summary>
         /// Link handle struct.
         /// </summary>
-        internal struct FPDF_LINK
+        public struct FPDF_LINK
         {
             /// <summary>
             /// Gets invalid handle.
@@ -250,7 +250,7 @@
         /// <summary>
         /// Annotation handle struct.
         /// </summary>
-        internal struct FPDF_ANNOTATION
+        public struct FPDF_ANNOTATION
         {
             /// <summary>
             /// Gets invalid handle.
@@ -280,7 +280,7 @@
         /// <summary>
         /// Text page handle struct.
         /// </summary>
-        internal struct FPDF_TEXTPAGE
+        public struct FPDF_TEXTPAGE
         {
             /// <summary>
             /// Gets invalid handle.
@@ -310,7 +310,7 @@
         /// <summary>
         /// Search context handle struct.
         /// </summary>
-        internal struct FPDF_SCHHANDLE
+        public struct FPDF_SCHHANDLE
         {
             /// <summary>
             /// Gets invalid handle.
@@ -340,7 +340,7 @@
         /// <summary>
         /// Web link in page handle struct.
         /// </summary>
-        internal struct FPDF_PAGELINK
+        public struct FPDF_PAGELINK
         {
             /// <summary>
             /// Gets invalid handle.
@@ -370,7 +370,7 @@
         /// <summary>
         /// Page object handle struct.
         /// </summary>
-        internal struct FPDF_PAGEOBJECT
+        public struct FPDF_PAGEOBJECT
         {
             /// <summary>
             /// Gets invalid handle.
@@ -400,7 +400,7 @@
         /// <summary>
         /// Form handle struct.
         /// </summary>
-        internal struct FPDF_FORMHANDLE
+        public struct FPDF_FORMHANDLE
         {
             /// <summary>
             /// Gets invalid handle.

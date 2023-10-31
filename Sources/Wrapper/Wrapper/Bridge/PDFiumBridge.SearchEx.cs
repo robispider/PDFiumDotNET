@@ -10,7 +10,7 @@
     /// <summary>
     /// The class contains all pdfium methods currently supported in this project.
     /// </summary>
-    internal sealed partial class PDFiumBridge
+    public sealed partial class PDFiumBridge
     {
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         private delegate int FPDFText_GetCharIndexFromTextIndex_Delegate(FPDF_TEXTPAGE text_page, int nTextIndex);

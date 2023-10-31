@@ -8,7 +8,7 @@
     /// <summary>
     /// The class contains all pdfium methods currently supported in this project.
     /// </summary>
-    internal sealed partial class PDFiumBridge
+    public sealed partial class PDFiumBridge
     {
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         private delegate FPDF_DOCUMENT FPDF_CreateNewDocument_Delegate();

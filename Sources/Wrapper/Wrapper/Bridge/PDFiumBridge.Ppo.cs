@@ -9,7 +9,7 @@
     /// <summary>
     /// The class contains all pdfium methods currently supported in this project.
     /// </summary>
-    internal sealed partial class PDFiumBridge
+    public sealed partial class PDFiumBridge
     {
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         private delegate bool FPDF_ImportPagesByIndex_Delegate(FPDF_DOCUMENT dest_doc, FPDF_DOCUMENT src_doc, IntPtr page_indices, ulong length, int index);

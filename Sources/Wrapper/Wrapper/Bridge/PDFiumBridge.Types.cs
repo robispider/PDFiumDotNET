@@ -9,12 +9,12 @@
     /// <summary>
     /// The class contains all delegates of methods in pdfium dll.
     /// </summary>
-    internal partial class PDFiumBridge
+    public partial class PDFiumBridge
     {
         /// <summary>
         /// Enumeration of all errors.
         /// </summary>
-        internal enum FPDF_ERROR : int
+        public enum FPDF_ERROR : int
         {
             /// <summary>
             /// Error value - no error.
@@ -75,7 +75,7 @@
         /// Enumeration of available permission flags.
         /// </summary>
         [Flags]
-        internal enum FPDF_PERMISSIONS : int
+        public enum FPDF_PERMISSIONS : int
         {
             /// <summary>
             /// Permission bit - allow print - 3. bit of permission value.
@@ -130,7 +130,7 @@
         /// Enumeration of available rendering flags.
         /// </summary>
         [Flags]
-        internal enum FPDF_RENDERING_FLAGS : int
+        public enum FPDF_RENDERING_FLAGS : int
         {
             /// <summary>
             /// No rendering flag.
@@ -240,7 +240,7 @@
         /// <summary>
         /// Enumeration of available action types.
         /// </summary>
-        internal enum FPDF_ACTION_TYPES : int
+        public enum FPDF_ACTION_TYPES : int
         {
             /// <summary>
             /// Action type: Unsupported action type.
@@ -272,7 +272,7 @@
         /// Enumeration of available flags for find.
         /// </summary>
         [Flags]
-        internal enum FPDF_FIND_FLAGS : int
+        public enum FPDF_FIND_FLAGS : int
         {
             /// <summary>
             /// Flags used by FPDFText_FindStart to define no restriction is required.
@@ -318,7 +318,7 @@
         /// <summary>
         /// Enumeration defines all possible values defined for paper handling when printing.
         /// </summary>
-        internal enum FPDF_DUPLEXTYPE : int
+        public enum FPDF_DUPLEXTYPE : int
         {
             /// <summary>
             /// Undefined duplex type.
@@ -344,7 +344,7 @@
         /// <summary>
         /// Enumeration defines format values for <see cref="FPDFBitmap_CreateEx"/>.
         /// </summary>
-        internal enum FPDFBitmapFormat : int
+        public enum FPDFBitmapFormat : int
         {
             /// <summary>
             /// Unknown or unsupported format.
@@ -375,7 +375,7 @@
         /// <summary>
         /// Enumeration defines PDF text rendering modes.
         /// </summary>
-        internal enum FPDF_TEXT_RENDERMODE
+        public enum FPDF_TEXT_RENDERMODE
         {
             /// <summary>
             /// PDF text rendering mode.
@@ -431,7 +431,7 @@
         /// <summary>
         /// Available annotation subtypes.
         /// </summary>
-        internal enum FPDF_ANNOTATION_SUBTYPE : int
+        public enum FPDF_ANNOTATION_SUBTYPE : int
         {
             /// <summary>
             /// Annotation subtype.
@@ -583,7 +583,7 @@
         /// Annotation flags.
         /// </summary>
         [Flags]
-        internal enum FPDF_ANNOT_FLAGS : int
+        public enum FPDF_ANNOT_FLAGS : int
         {
             /// <summary>
             /// Annotation flag.
@@ -639,7 +639,7 @@
         /// <summary>
         /// Annotation appearance modes.
         /// </summary>
-        internal enum FPDF_ANNOT_APPEARANCEMODES : int
+        public enum FPDF_ANNOT_APPEARANCEMODES : int
         {
             /// <summary>
             /// Annotation appearance mode.
@@ -666,7 +666,7 @@
         /// Available form flags.
         /// </summary>
         [Flags]
-        internal enum FPDF_FORMFLAGS : int
+        public enum FPDF_FORMFLAGS : int
         {
             /// <summary>
             /// Form flag.
@@ -717,7 +717,7 @@
         /// <summary>
         /// Additional actions type of form field.
         /// </summary>
-        internal enum FPDF_ANNOT_AACTION
+        public enum FPDF_ANNOT_AACTION
         {
             /// <summary>
             /// K, on key stroke, JavaScript action.
@@ -747,7 +747,7 @@
         /// <summary>
         /// Annotation color types.
         /// </summary>
-        internal enum FPDFANNOT_COLORTYPES
+        public enum FPDFANNOT_COLORTYPES
         {
             /// <summary>
             /// Annotation color type.
@@ -763,7 +763,7 @@
         /// <summary>
         /// Print modes.
         /// </summary>
-        internal enum FPDF_PRINTMODES
+        public enum FPDF_PRINTMODES
         {
             /// <summary>
             /// Print mode.
@@ -815,7 +815,7 @@
         /// Color struct represents a 32-bit value specifing the color, in 8888 ARGB format.
         /// </summary>
         [StructLayout(LayoutKind.Explicit)]
-        internal struct FPDF_COLOR
+        public struct FPDF_COLOR
         {
             [FieldOffset(0)]
             private readonly byte _blue;
@@ -901,7 +901,7 @@
         /// <summary>
         /// Rectangle structure.
         /// </summary>
-        internal struct FS_RECTF
+        public struct FS_RECTF
         {
             /// <summary>
             /// The x-coordinate of the left-top corner.
@@ -927,7 +927,7 @@
         /// <summary>
         /// Size structure.
         /// </summary>
-        internal struct FS_SIZEF
+        public struct FS_SIZEF
         {
             /// <summary>
             /// Width of size.
@@ -949,7 +949,7 @@
         /// Scaling is performed with [sx 0 0 sy 0 0].
         /// See PDF Reference 1.7, 4.2.2 Common Transformations for more.
         /// </summary>
-        internal struct FS_MATRIX
+        public struct FS_MATRIX
         {
             /// <summary>
             /// A value of matrix.

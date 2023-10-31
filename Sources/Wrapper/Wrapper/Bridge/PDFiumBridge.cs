@@ -9,7 +9,7 @@
     /// <summary>
     /// The class contains all pdfium methods currently supported in this project.
     /// </summary>
-    internal sealed partial class PDFiumBridge : IDisposable
+    public  sealed partial class PDFiumBridge : IDisposable
     {
         private static readonly object _syncObject = new object();
         private static IntPtr _libraryHandle;
